@@ -9,7 +9,7 @@ const insertionSort = (arr) => {
             arr[j + 1] = arr[j];
             j--;
         }
-        arr[j + 1] = key;
+        arr[j + 1] = key;//when we are swapping , we are just re-assaigning the value, so we should keep the key to re assaign again, if you are confused and then just swap inside the while loop rather than re assaigning.
     }
     return arr;
 }

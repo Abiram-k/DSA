@@ -12,7 +12,7 @@ const bubbleSort = (arr) => {
         }
         if (!swapped) break; // Exit early if no swaps were made
     }
-    return arr
+    return arr 
 }
 
 const array = [64, 9, 25, 11, 12, 22, 8];
