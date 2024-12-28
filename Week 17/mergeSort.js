@@ -18,6 +18,7 @@ const join = function (firstHalf, secondHalf) {
     let i = 0;
 
     while (i < firstHalf.length && j < secondHalf.length) // PUSHING ALL THE ELEMENTS FROM FIRST AND SECOND ARRAYS..
+    
         if (firstHalf[i] < secondHalf[j])
             newArray.push(firstHalf[i++]);
         else
@@ -32,6 +33,12 @@ const join = function (firstHalf, secondHalf) {
     return newArray;
 }
 
-const array = [64, 25, 11, 12, 22];
+let a =[1,2,3,4,5,433,3,3,322,3];
+let b = [1,2,3,4,5,433,3,3,322,235,45645];
+const array = [...a, ...b];
 const sortedArray = mergeSort(array);
 console.log(sortedArray); 
+
+// Output: [ 11, 12, 22, 25, 64 ]
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)

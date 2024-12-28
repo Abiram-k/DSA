@@ -7,8 +7,7 @@ const bubbleSort = (arr) => {
         for (let j = 0; j < i; j++) {
             if (arr[j] > arr[j + 1])
                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-            swapped = true;
-
+            swapped = true; // if now swap occur , it means no element are greater than +1 element( it is sorted... )
         }
         if (!swapped) break; // Exit early if no swaps were made
     }

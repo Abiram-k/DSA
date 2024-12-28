@@ -36,3 +36,6 @@ const swap = function (arr, start, end) {
 const array = [22, 64, 25, 12, 1, 33];
 const sortedArray = quickSort(array);
 console.log(sortedArray);  
+// Output: [ 1, 12, 22, 25, 33, 64 ]
+// Time Complexity: O(n log n)
+// Space Complexity: O(log n)
