@@ -2,7 +2,6 @@
 // select the smallest value and then put it on the starting of the array 😃
 
 const selectionSort = (arr) => {
-    let k = 0;
     let length = arr.length
     for (let i = 0; i < length - 1; i++) {
         let min = i;

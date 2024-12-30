@@ -17,7 +17,7 @@ class HashTable {
         const index = this.hash(key);
         let bucket = this.table[index];
         if (!bucket) {
-            this.table[index] = [[key, value]] ;
+            this.table[index] = [[key, value]];
         } else {
             const sameKeyItem = bucket.find(item => item[0] == key)
             if (sameKeyItem)
@@ -48,7 +48,7 @@ class HashTable {
     display() {
         for (let i = 0; i < this.table.length; i++)
             if (this.table[i])
-                console.log(this.table[i])
+                console.log(this.table[i]);
     }
 }
 

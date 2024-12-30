@@ -56,7 +56,6 @@ class LinearProbingHashTable {
     }
     display() {
         return this.table.map((ele, index) => ({ index, ele }));
-
     }
 }
 

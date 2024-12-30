@@ -14,7 +14,7 @@ const bubbleSort = (arr) => {
     return arr 
 }
 
-const array = [64, 9, 25, 11, 12, 22, 8];
+const array = [64, 9, 25, 11, 12, 8];
 
 const sortedArray = bubbleSort(array);
-console.log(sortedArray); 
+console.log(sortedArray);  

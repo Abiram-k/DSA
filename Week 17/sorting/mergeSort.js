@@ -33,10 +33,9 @@ const join = function (firstHalf, secondHalf) {
     return newArray;
 }
 
-let a =[1,2,3,4,5,433,3,3,322,3];
-let b = [1,2,3,4,5,433,3,3,322,235,45645];
-const array = [...a, ...b];
-const sortedArray = mergeSort(array);
+let array =[1,2,3,4,5,433,3,3,322,3];
+
+const sortedArray = mergeSort(array); 
 console.log(sortedArray); 
 
 // Output: [ 11, 12, 22, 25, 64 ]
