@@ -98,7 +98,7 @@ class AddNode {
 
         while (current) {
             let after = current.next;
-            
+
             while (after) {
                 if (after.value < current.value) {
                     let temp = current.value;
@@ -141,7 +141,21 @@ class AddNode {
         }
         prev.next = slow.next;
     }
-
+    removeOdd() {
+        while (this.head && this.head.value % 2 != 0) {
+            this.head = this.head.next;
+        }
+        let current = this.head;
+        let prev = null;
+        while (current) {
+            if (current.value % 2 != 0) {
+                prev.next = current.next;
+            } else {
+                prev = current;
+            }
+            current = current.next;
+        }
+    }
 
 }
 
@@ -149,12 +163,14 @@ const node = new AddNode();
 
 node.addNewNode(10);
 node.addNewNode(20);
-node.insertNode(20, 55);
+// node.insertNode(20, 55);
 node.addNewNode(30);
-node.addNewNode(30);
+node.addNewNode(5);
+node.addNewNode(3);
+node.removeOdd();
 // node.deleteNode(30);
 // node.sortLinkedList();
 // node.highest()
-node.delteMiddleNode();
+// node.delteMiddleNode();
 node.display();
 

@@ -142,6 +142,7 @@ class BinarySearchTree {
         let rightHeight = this._heightHelper(node.right);
         return 1 + Math.max(leftHeight, rightHeight); // 1 is for couting the current node.
     }
+    
     isBst(node = this.root, min = -Infinity, max = Infinity) {
         if (!node) return true
         if (node.value <= min || node.value >= max) return false;

@@ -1,10 +1,9 @@
 class Heap {
     constructor(array = []) {
         this.heap = [];
-        if (Array.isArray(array) && array.length > 0) {
+        if (array.length > 0) {
             this.buildHeap(array);
         }
-
     }
 
     buildHeap(array) {

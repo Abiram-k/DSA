@@ -18,7 +18,6 @@ const join = function (firstHalf, secondHalf) {
     let i = 0;
 
     while (i < firstHalf.length && j < secondHalf.length) // PUSHING ALL THE ELEMENTS FROM FIRST AND SECOND ARRAYS..
-    
         if (firstHalf[i] < secondHalf[j])
             newArray.push(firstHalf[i++]);
         else

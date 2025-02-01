@@ -6,7 +6,6 @@ class Stack {
         this.stack.push(element)
     }
     pop() {
-
         if (this.isEmpty())
             console.log("Stack is empty!");
         else
@@ -37,7 +36,6 @@ class Stack {
         }
         let newStack = [];
         let i = this.size() - 1;
-        let k = 0
         while (i >= 0) {
             newStack.push(this.pop())
             i--;

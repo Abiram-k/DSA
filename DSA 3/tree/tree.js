@@ -20,17 +20,18 @@ class Tree {
             return;
         }
         else {
-            console.log("No head were founded.")
+            console.log("No head were founded.");
             return;
         }
     }
     _findParent(node, parentValue) {
+        if(!node) return;
         if (node.value == parentValue) return node;
-        for (let child of parent.child) {
-            let result = this._findParent(child);
+        for (let child of node.children) {
+            let result = this._findParent(child,parentValue);
             if (result) return result;
         }
-        return false;
+        return null;
     }
 
     bfs(root = this.root) {
@@ -38,7 +39,6 @@ class Tree {
         let result = [];
         while (queue.length) {
             let current = queue.shift();
-            console.log("NODE:::", current)
             result.push(current.value || current);
             if (current.children?.length) {
                 queue.push(...current.children);
@@ -46,6 +46,7 @@ class Tree {
         }
         return result;
     }
+
     kthSmallest(k) {
         let result = this.bfs();
         result.sort((a, b) => a - b)

@@ -13,7 +13,7 @@ class undoRedoStack {
             this.redoStack.push(undoStackEle);
             return undoStackEle;
         }
-        return 'No value are there!'
+        return 'No value are there!';
     }
     redo() {
         if (this.redoStack.length > 0) {
